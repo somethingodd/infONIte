@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.0": []
+  },
+  "packageFolders": {
+    "/home/petteyg/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "3.12.0",
+    "restore": {
+      "projectUniqueName": "/home/petteyg/devel/PLib/PLib/PLib.csproj",
+      "projectName": "PLib",
+      "projectPath": "/home/petteyg/devel/PLib/PLib/PLib.csproj",
+      "packagesPath": "/home/petteyg/.nuget/packages/",
+      "outputPath": "/home/petteyg/devel/PLib/PLib/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/petteyg/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net40"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net40": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net40": {
+        "runtimeIdentifierGraphPath": "/opt/dotnet_core/sdk/3.1.403/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

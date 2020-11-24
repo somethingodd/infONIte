@@ -1,0 +1,31 @@
+﻿{
+  "version": "3.12.0",
+  "restore": {
+    "projectUniqueName": "/home/petteyg/devel/PLib/PLib/PLib.csproj",
+    "projectName": "PLib",
+    "projectPath": "/home/petteyg/devel/PLib/PLib/PLib.csproj",
+    "outputPath": "/home/petteyg/devel/PLib/PLib/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net40"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net40": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net40": {
+      "runtimeIdentifierGraphPath": "/opt/dotnet_core/sdk/3.1.403/RuntimeIdentifierGraph.json"
+    }
+  }
+}

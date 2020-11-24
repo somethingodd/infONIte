@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{B9865E28-01F3-4405-827B-FD6003713F99}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>infONIte</RootNamespace>
+        <AssemblyName>infONIte</AssemblyName>
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.steam\steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="src\InfoniteConfig.cs" />
+        <Compile Include="src\InfoniteFlowControl.cs" />
+        <Compile Include="src\InfoniteBattery.cs" />
+        <Compile Include="src\InfoniteBatteryConfig.cs" />
+        <Compile Include="src\InfoniteFridge.cs" />
+        <Compile Include="src\InfoniteFridgeConfig.cs" />
+        <Compile Include="src\InfoniteVentConfig.cs" />
+        <Compile Include="src\InfoniteVaporatorConfig.cs" />
+        <Compile Include="src\InfoniteDrainConfig.cs" />
+        <Compile Include="src\InfoniteCondenserConfig.cs" />
+        <Compile Include="src\InfoniteCompressor.cs" />
+        <Compile Include="src\InfoniteCompressorConfig.cs" />
+        <Compile Include="src\InfoniteSink.cs" />
+        <Compile Include="src\InfoniteSource.cs" />
+        <Compile Include="src\Infonite.cs" />
+        <Compile Include="src\L10n.cs" />
+        <Compile Include="src\PlanStrings.cs" />
+        <Compile Include="src\PLib\Buildings\BuildIngredient.cs" />
+        <Compile Include="src\PLib\Buildings\ColoredRangeVisualizer.cs" />
+        <Compile Include="src\PLib\Buildings\ConduitConnection.cs" />
+        <Compile Include="src\PLib\Buildings\PBuilding.cs" />
+        <Compile Include="src\PLib\Buildings\PowerRequirement.cs" />
+        <Compile Include="src\PLib\Datafiles\PCodex.cs" />
+        <Compile Include="src\PLib\Datafiles\PLocalization.cs" />
+        <Compile Include="src\PLib\Detours\DetouredField.cs" />
+        <Compile Include="src\PLib\Detours\DetouredMethod.cs" />
+        <Compile Include="src\PLib\Detours\DetourException.cs" />
+        <Compile Include="src\PLib\Detours\IDetouredField.cs" />
+        <Compile Include="src\PLib\Detours\LazyDetouredField.cs" />
+        <Compile Include="src\PLib\Detours\PDetours.cs" />
+        <Compile Include="src\PLib\KeyBindings\KeyCodeStrings.cs" />
+        <Compile Include="src\PLib\KeyBindings\PAction.cs" />
+        <Compile Include="src\PLib\KeyBindings\PActionManager.cs" />
+        <Compile Include="src\PLib\KeyBindings\PKeyBinding.cs" />
+        <Compile Include="src\PLib\Lighting\LightingArgs.cs" />
+        <Compile Include="src\PLib\Lighting\OctantBuilder.cs" />
+        <Compile Include="src\PLib\Lighting\PLightManager.cs" />
+        <Compile Include="src\PLib\Lighting\PLightShape.cs" />
+        <Compile Include="src\PLib\Options\ButtonOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\CategoryExpandHandler.cs" />
+        <Compile Include="src\PLib\Options\CheckboxOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\ConfigFileAttribute.cs" />
+        <Compile Include="src\PLib\Options\DynamicOptionAttribute.cs" />
+        <Compile Include="src\PLib\Options\DynamicOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\FloatOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\IDynamicOption.cs" />
+        <Compile Include="src\PLib\Options\IntOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\IOptions.cs" />
+        <Compile Include="src\PLib\Options\IOptionsHandler.cs" />
+        <Compile Include="src\PLib\Options\LimitAttribute.cs" />
+        <Compile Include="src\PLib\Options\ModInfoAttribute.cs" />
+        <Compile Include="src\PLib\Options\ModOptionsHandler.cs" />
+        <Compile Include="src\PLib\Options\OptionAttribute.cs" />
+        <Compile Include="src\PLib\Options\OptionsDialog.cs" />
+        <Compile Include="src\PLib\Options\OptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\POptions.cs" />
+        <Compile Include="src\PLib\Options\RestartRequiredAttribute.cs" />
+        <Compile Include="src\PLib\Options\RuntimeOptionsHandler.cs" />
+        <Compile Include="src\PLib\Options\SelectOneOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\SlidingBaseOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\StringOptionsEntry.cs" />
+        <Compile Include="src\PLib\Options\TextBlockOptionsEntry.cs" />
+        <Compile Include="src\PLib\PLibPatches.cs" />
+        <Compile Include="src\PLib\PVersion.cs" />
+        <Compile Include="src\PLib\UI\IDynamicSizable.cs" />
+        <Compile Include="src\PLib\UI\ImageTransform.cs" />
+        <Compile Include="src\PLib\UI\ISettableFlexSize.cs" />
+        <Compile Include="src\PLib\UI\ITooltipListableOption.cs" />
+        <Compile Include="src\PLib\UI\IUIComponent.cs" />
+        <Compile Include="src\PLib\UI\LayoutSizes.cs" />
+        <Compile Include="src\PLib\UI\Layouts\AbstractLayoutGroup.cs" />
+        <Compile Include="src\PLib\UI\Layouts\BoxLayoutGroup.cs" />
+        <Compile Include="src\PLib\UI\Layouts\BoxLayoutParams.cs" />
+        <Compile Include="src\PLib\UI\Layouts\BoxLayoutResults.cs" />
+        <Compile Include="src\PLib\UI\Layouts\CardLayoutGroup.cs" />
+        <Compile Include="src\PLib\UI\Layouts\CardLayoutResults.cs" />
+        <Compile Include="src\PLib\UI\Layouts\GridComponent.cs" />
+        <Compile Include="src\PLib\UI\Layouts\GridComponentSpec.cs" />
+        <Compile Include="src\PLib\UI\Layouts\GridLayoutResults.cs" />
+        <Compile Include="src\PLib\UI\Layouts\IRelativeLayout.cs" />
+        <Compile Include="src\PLib\UI\Layouts\PGridLayoutGroup.cs" />
+        <Compile Include="src\PLib\UI\Layouts\RelativeLayout.cs" />
+        <Compile Include="src\PLib\UI\Layouts\RelativeLayoutGroup.cs" />
+        <Compile Include="src\PLib\UI\Layouts\RelativeLayoutParams.cs" />
+        <Compile Include="src\PLib\UI\Layouts\RelativeLayoutResults.cs" />
+        <Compile Include="src\PLib\UI\Layouts\RelativeLayoutUtil.cs" />
+        <Compile Include="src\PLib\UI\PButton.cs" />
+        <Compile Include="src\PLib\UI\PCheckBox.cs" />
+        <Compile Include="src\PLib\UI\PComboBox.cs" />
+        <Compile Include="src\PLib\UI\PComboBoxComponent.cs" />
+        <Compile Include="src\PLib\UI\PContainer.cs" />
+        <Compile Include="src\PLib\UI\PDialog.cs" />
+        <Compile Include="src\PLib\UI\PGridPanel.cs" />
+        <Compile Include="src\PLib\UI\PLabel.cs" />
+        <Compile Include="src\PLib\UI\PPanel.cs" />
+        <Compile Include="src\PLib\UI\PRelativePanel.cs" />
+        <Compile Include="src\PLib\UI\PScrollPane.cs" />
+        <Compile Include="src\PLib\UI\PSlider.cs" />
+        <Compile Include="src\PLib\UI\PSpacer.cs" />
+        <Compile Include="src\PLib\UI\PTextArea.cs" />
+        <Compile Include="src\PLib\UI\PTextComponent.cs" />
+        <Compile Include="src\PLib\UI\PTextField.cs" />
+        <Compile Include="src\PLib\UI\PTextFieldEvents.cs" />
+        <Compile Include="src\PLib\UI\PToggle.cs" />
+        <Compile Include="src\PLib\UI\PUIDelegates.cs" />
+        <Compile Include="src\PLib\UI\PUIElements.cs" />
+        <Compile Include="src\PLib\UI\PUIStrings.cs" />
+        <Compile Include="src\PLib\UI\PUITuning.cs" />
+        <Compile Include="src\PLib\UI\PUIUtils.cs" />
+        <Compile Include="src\PLib\UI\TextAnchorUtils.cs" />
+        <Compile Include="src\PLib\UI\UIDetours.cs" />
+        <Compile Include="src\PLib\Utils\ExtensionMethods.cs" />
+        <Compile Include="src\PLib\Utils\IPatchMethodInstance.cs" />
+        <Compile Include="src\PLib\Utils\IPLibAnnotation.cs" />
+        <Compile Include="src\PLib\Utils\IRefreshUserMenu.cs" />
+        <Compile Include="src\PLib\Utils\OptionalMethodInfo.cs" />
+        <Compile Include="src\PLib\Utils\PLibMethodAttribute.cs" />
+        <Compile Include="src\PLib\Utils\PLibPatchAttribute.cs" />
+        <Compile Include="src\PLib\Utils\PPatchManager.cs" />
+        <Compile Include="src\PLib\Utils\PPatchTools.cs" />
+        <Compile Include="src\PLib\Utils\PRegistry.cs" />
+        <Compile Include="src\PLib\Utils\PriorityQueue.cs" />
+        <Compile Include="src\PLib\Utils\PSharedData.cs" />
+        <Compile Include="src\PLib\Utils\PStateMachines.cs" />
+        <Compile Include="src\PLib\Utils\PToolMode.cs" />
+        <Compile Include="src\PLib\Utils\PTranspilerTools.cs" />
+        <Compile Include="src\PLib\Utils\PUtil.cs" />
+        <Compile Include="src\PLib\Utils\RunAt.cs" />
+        <Compile Include="src\STRINGS.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net40" Version="1.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="otherdlls\Always3Interests.dll" />
+      <Content Include="otherdlls\BuildableNaturalTile-merged.dll" />
+      <Content Include="otherdlls\GermicideLampMod.dll" />
+      <Content Include="otherdlls\InfiniteSourceSink.dll" />
+      <Content Include="otherdlls\Mod.WGSM.dll" />
+      <Content Include="otherdlls\newinfs.dll" />
+      <Content Include="src\PLib\icon.png" />
+      <Content Include="src\PLib\obj\Debug\net40\PLib.assets.cache" />
+      <Content Include="src\PLib\obj\PLib.csproj.nuget.dgspec.json" />
+      <Content Include="src\PLib\obj\PLib.csproj.nuget.g.props" />
+      <Content Include="src\PLib\obj\PLib.csproj.nuget.g.targets" />
+      <Content Include="src\PLib\obj\project.assets.json" />
+      <Content Include="src\PLib\obj\project.nuget.cache" />
+      <Content Include="src\PLib\obj\project.packagespec.json" />
+      <Content Include="src\PLib\obj\rider.project.restore.info" />
+      <Content Include="src\PLib\PLib.csproj" />
+      <Content Include="src\PLib\PLib.xcf" />
+      <Content Include="src\PLib\README.md" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
