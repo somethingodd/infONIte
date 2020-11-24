@@ -1,3 +1,5 @@
+This code was copied from [peterhaneve](https://github.com/peterhaneve)'s [PLib](https://github.com/peterhaneve/ONIMods/commit/177d3abb3b216c3a1bf01590491718a3a53db156#diff-6c9c7f94bbcaf25d3e611be87ac8dd6e22e54b4616e01cb38883ca799cdf6261) as I could not get ILMerge to work on Linux.
+
 # PLib
 
 PLib is Peter's library for making mods. All mods in this repository depend on PLib via [ILMerge](https://github.com/dotnet/ILMerge).
